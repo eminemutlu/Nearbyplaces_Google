@@ -19,6 +19,8 @@ $data = json_decode(file_get_contents("php://input"));
 
 if(
     !empty($data->radius)
+    && !empty($data->latitude)
+    && !empty($data->longitude)
 ){ 
  
     $area->latitude = $data->latitude;
