@@ -21,6 +21,7 @@
 	$results = "";
 	$show_arr = array();
 	$sonuc="NO"; 
+	$api_status="";
 
 	if(isset($latitude) && isset($longitude) && isset($radius)){
 		
@@ -38,7 +39,7 @@
 			
 			if($typesty == 'all'){ $typesty = '';}
 
-			$json_google = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='.$latitude.','.$longitude .'&radius='.$radius.'&types='.$typesty.'&key=AIzaSyCV1dzVyJ_Pdu68SArcca214-gTOsatSt8';
+			$json_google = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='.$latitude.','.$longitude .'&radius='.$radius.'&types='.$typesty.'&key='.$google_API_key;
 			$jsondatag = @file_get_contents($json_google);
 			$arrgoogle = (array) json_decode($jsondatag,true);
 			$count_google = count($arrgoogle);
@@ -85,7 +86,7 @@
 			$results=$api_status;
 		}
 			
-		echo $count.'#'.$sonuc.'#'.$results;
+		echo $results;
 
 	}
 

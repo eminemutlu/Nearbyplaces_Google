@@ -14,8 +14,6 @@ body {
   padding-bottom: 20px;
 }
 
-.bg-light{ background-color: #fff !important;}
-
 .btn-primary,.btn-info{    
     background-color: #fa7d0b !important;
     border-color: #fa7d0b !important;
@@ -26,7 +24,6 @@ body {
     margin-top: 50px;
     
 }
-
 .row { padding-top:  25px; padding-bottom: 25px; }
 .results{ text-align: left;}
 th{ font-weight: bold;}
@@ -34,9 +31,6 @@ td,th{ font-size:1.2em !important;}
 #form{ margin-bottom: 50px; }
 
 h3 { font-size: 3em;}
-
-.wrap { max-width: 75em; min-height: 40em; height:100%; width:100%; margin: 0 auto; padding-top: 2.5%;}
-#map-canvas { height: 90%; }
 
 
 

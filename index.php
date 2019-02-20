@@ -98,10 +98,7 @@
           data: "longitude=" + lang+ "&latitude=" +  lat + '&radius=' +radius+ '&typesty='+typesty, 
           success : function(result) {
 
-                    var message="";
-                    var result_arr = result.split('#');
-
-                    $('#results').html(result_arr[2]);
+                    $('#results').html(result);
                      
                   },
                   error: function(xhr, textStatus, errorThrown) {

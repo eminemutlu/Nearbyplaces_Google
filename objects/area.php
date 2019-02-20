@@ -26,10 +26,8 @@ class Area{
                     AND longitude = ".$this->longitude." 
                     AND radius = ".$this->radius."
                     AND typesty = '".$this->typesty."' 
-                    
                 LIMIT
                     0,1";
-     
         
         $stmt = $this->conn->prepare($query);
         $stmt->execute();

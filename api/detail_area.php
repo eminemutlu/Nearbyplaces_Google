@@ -1,9 +1,4 @@
 <?php
-/*
-if(!isset($_GET['latitude']) || !isset($_GET['longitude']) || !isset($_GET['radius'])) : 
-    die();
-endif;*/
-
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: access");
