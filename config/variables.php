@@ -1,7 +1,7 @@
 
 <?php 
 
-    $file_name='netas_dev';
+    $file_name='Nearbyplaces_Google';
     $url = 'http://localhost:8070/'.$file_name;
     $google_API_key = '';
 
