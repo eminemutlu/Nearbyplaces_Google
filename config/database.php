@@ -3,7 +3,7 @@
 	class Database{
 	 
 	    private $host = "localhost";
-	    private $db_name = "netas_googleapi_db";
+	    private $db_name = "databasename";
 	    private $username = "root";
 	    private $password = "";
 	    public $conn;
